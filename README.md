@@ -7,20 +7,20 @@ API client gem for [keybase.io](https://keybase.io).
 ## Installing
 
 ```
-gem install keybase
+gem install keybase-core
 ```
 
 or
 
 (in Gemfile or .gemspec)
 ```ruby
-gem 'keybase'
+gem 'keybase-core'
 ```
 
 then
 
 ```ruby
-require 'keybase'
+require 'keybase-core'
 ```
 
 ## Usage
