@@ -1,4 +1,4 @@
-# Keybase Gem
+# Keybase Core Gem
 
 API client gem for [keybase.io](https://keybase.io).
 
