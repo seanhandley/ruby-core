@@ -3,7 +3,7 @@ Gem::Specification.new do |gem|
   gem.version = '0.1.1'
   gem.date = '2014-03-25'
   gem.summary = 'keybase-core'
-  gem.description = 'CLI for keybase.io'
+  gem.description = 'Core Ruby lib for keybase.io'
   gem.authors = [ 'Max Krohn', 'Sean Handley' ]
   gem.email = 'themax@gmail.com'
   gem.files = `git ls-files`.split("\n")
