@@ -1,13 +1,13 @@
 Gem::Specification.new do |gem|
   gem.name = 'keybase-core'
   gem.version = '0.1.0'
-  gem.date = '2013-10-25'
+  gem.date = '2014-03-25'
   gem.summary = 'keybase-core'
   gem.description = 'CLI for keybase.io'
   gem.authors = [ 'Max Krohn', 'Sean Handley' ]
   gem.email = 'themax@gmail.com'
   gem.files = `git ls-files`.split("\n")
-  gem.homepage = 'https://github.com/keybase/ruby-client'
+  gem.homepage = 'https://github.com/keybase/ruby-core'
   gem.license = 'BSD-3-Clause'
   
   gem.required_ruby_version = '~> 2.1.0'
