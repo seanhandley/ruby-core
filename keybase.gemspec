@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name = 'keybase-core'
-  gem.version = '0.1.1'
+  gem.version = '0.1.2'
   gem.date = '2014-03-25'
   gem.summary = 'keybase-core'
   gem.description = 'Core Ruby lib for keybase.io'
