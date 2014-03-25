@@ -1,8 +1,8 @@
 Gem::Specification.new do |gem|
-  gem.name = 'keybase'
+  gem.name = 'keybase-core'
   gem.version = '0.1.0'
   gem.date = '2013-10-25'
-  gem.summary = 'keybase'
+  gem.summary = 'keybase-core'
   gem.description = 'CLI for keybase.io'
   gem.authors = [ 'Max Krohn', 'Sean Handley' ]
   gem.email = 'themax@gmail.com'
