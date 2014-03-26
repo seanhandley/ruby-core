@@ -153,7 +153,7 @@ module Keybase
     
     def set_private_keys(params)
       @private_keys = OpenStruct.new(params)
-      @rivate_keys = update_collection(params, @private_keys)       
+      @private_keys = update_collection(params, @private_keys)       
     end
     
     def update_collection(params, collection)
