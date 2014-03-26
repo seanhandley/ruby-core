@@ -1,7 +1,5 @@
-if require 'simplecov'
-  SimpleCov.start do
-    add_filter '/test/'
-  end
+if require 'coveralls'
+  Coveralls.wear!
 end
 
 require_relative '../lib/keybase'
