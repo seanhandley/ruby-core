@@ -148,20 +148,21 @@ module Keybase
     
     def set_public_keys(params)
       @public_keys = OpenStruct.new(params)
-      params.each do |k,v|
-        v.merge!('created_at' => Time.at(v['ctime']).to_datetime)
-        v.merge!('updated_at' => Time.at(v['mtime']).to_datetime)
-        @public_keys.send("#{k}=".to_sym, OpenStruct.new(v))
-      end      
+      @public_keys = update_collection(params, @public_keys)    
     end
     
     def set_private_keys(params)
       @private_keys = OpenStruct.new(params)
+      @rivate_keys = update_collection(params, @private_keys)       
+    end
+    
+    def update_collection(params, collection)
       params.each do |k,v|
         v.merge!('created_at' => Time.at(v['ctime']).to_datetime)
         v.merge!('updated_at' => Time.at(v['mtime']).to_datetime)
-        @private_keys.send("#{k}=".to_sym, OpenStruct.new(v))
+        collection.send("#{k}=".to_sym, OpenStruct.new(v))
       end      
+      collection
     end
 
   end
