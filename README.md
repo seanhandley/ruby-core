@@ -1,6 +1,6 @@
-# Keybase Core Gem
+![Keybase](https://keybase.io/images/logo.png)
 
-API client gem for [keybase.io](https://keybase.io)
+Gem wrapper for [keybase.io](https://keybase.io) core API functions.
 
 [![Build Status](https://secure.travis-ci.org/seanhandley/ruby-core.png?branch=master)] (http://travis-ci.org/seanhandley/ruby-core) [![Gem Version](https://badge.fury.io/rb/keybase-core.png)](http://badge.fury.io/rb/keybase-core) [![Dependency Status](https://gemnasium.com/seanhandley/ruby-core.svg)](https://gemnasium.com/seanhandley/ruby-core)
 
