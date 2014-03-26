@@ -2,7 +2,7 @@
 
 Gem wrapper for [keybase.io](https://keybase.io) core API functions.
 
-[![Build Status](https://secure.travis-ci.org/seanhandley/ruby-core.png?branch=master)] (http://travis-ci.org/seanhandley/ruby-core) [![Gem Version](https://badge.fury.io/rb/keybase-core.png)](http://badge.fury.io/rb/keybase-core) [![Dependency Status](https://gemnasium.com/seanhandley/ruby-core.svg)](https://gemnasium.com/seanhandley/ruby-core) [![Coverage Status](https://coveralls.io/repos/seanhandley/ruby-core/badge.png?branch=master)](https://coveralls.io/r/seanhandley/ruby-core?branch=master) [![Code Climate](https://codeclimate.com/github/keybase/ruby-core.png)](https://codeclimate.com/github/keybase/ruby-core)
+[![Build Status](https://secure.travis-ci.org/keybase/ruby-core.png?branch=master)] (http://travis-ci.org/keybase/ruby-core) [![Gem Version](https://badge.fury.io/rb/keybase-core.png)](http://badge.fury.io/rb/keybase-core) [![Dependency Status](https://gemnasium.com/seanhandley/ruby-core.svg)](https://gemnasium.com/seanhandley/ruby-core) [![Coverage Status](https://coveralls.io/repos/seanhandley/ruby-core/badge.png?branch=master)](https://coveralls.io/r/seanhandley/ruby-core?branch=master) [![Code Climate](https://codeclimate.com/github/keybase/ruby-core.png)](https://codeclimate.com/github/keybase/ruby-core)
 
 
 ## Installing
