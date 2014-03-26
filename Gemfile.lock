@@ -57,6 +57,7 @@ DEPENDENCIES
   coveralls (~> 0.7.0)
   keybase-core!
   minitest (~> 5.3.1)
+  simplecov (~> 0.8.2)
   vcr (~> 2.8.0)
   webmock (~> 1.8.0)
   yard (~> 0.8.7.4)
