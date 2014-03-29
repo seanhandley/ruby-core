@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.homepage = 'https://github.com/keybase/ruby-core'
   gem.license = 'BSD-3-Clause'
   
-  gem.required_ruby_version = '~> 2.1.0'
+  gem.required_ruby_version = '~> 2.0.0'
   
   # Runtime Dependencies
   gem.add_runtime_dependency 'scrypt', '~> 1.2.1'
