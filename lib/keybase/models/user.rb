@@ -129,13 +129,13 @@ module Keybase
     
     def set_basics(params)
       @basics = OpenStruct.new(params.merge(created_at: nil, updated_at: nil))
-      @basics.created_at = Time.at(@basics.ctime).to_datetime if @basics.ctime
-      @basics.updated_at = Time.at(@basics.mtime).to_datetime if @basics.mtime
+      @basics.created_at = Time.at(@basics.ctime) if @basics.ctime
+      @basics.updated_at = Time.at(@basics.mtime) if @basics.mtime
     end
     
     def set_profile(params)
       @profile = OpenStruct.new(params.merge(updated_at: nil))
-      @profile.updated_at = Time.at(@profile.mtime).to_datetime if @profile.mtime
+      @profile.updated_at = Time.at(@profile.mtime) if @profile.mtime
     end
 
     def set_emails(params)
@@ -158,8 +158,8 @@ module Keybase
     
     def update_collection(params, collection)
       params.each do |k,v|
-        v.merge!('created_at' => Time.at(v['ctime']).to_datetime)
-        v.merge!('updated_at' => Time.at(v['mtime']).to_datetime)
+        v.merge!('created_at' => Time.at(v['ctime']))
+        v.merge!('updated_at' => Time.at(v['mtime']))
         collection.send("#{k}=".to_sym, OpenStruct.new(v))
       end      
       collection

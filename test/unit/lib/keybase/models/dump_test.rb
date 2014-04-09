@@ -8,8 +8,8 @@ module Keybase
     end
     
     def test_unix_time_parsed_to_date
-      assert_equal "2014-02-24T18:46:31+00:00",
-                    @dump.created_at.to_s
+      assert_equal "2014-02-24 18:46:31 UTC",
+                    @dump.created_at.utc.to_s
     end
     
     def test_dump_all
@@ -24,7 +24,7 @@ module Keybase
     def test_dump_latest
       Request::Dump.stub :latest, {'dump_id' => 1, 'ctime' => 1393267591} do
         assert_equal 1, Dump.latest.id
-        assert_equal '2014-02-24T18:46:31+00:00', Dump.latest.created_at.to_s
+        assert_equal '2014-02-24 18:46:31 UTC', Dump.latest.created_at.utc.to_s
       end      
     end
   end

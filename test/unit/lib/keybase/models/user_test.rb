@@ -14,29 +14,29 @@ module Keybase
     end
     
     def test_unix_times_parsed_to_dates_for_basics
-      assert_equal "2013-10-30T19:24:21+00:00",
-                    @user.basics.created_at.to_s
-      assert_equal "2013-10-30T19:41:01+00:00",
-                    @user.basics.updated_at.to_s
+      assert_equal "2013-10-30 19:24:21 UTC",
+                    @user.basics.created_at.utc.to_s
+      assert_equal "2013-10-30 19:41:01 UTC",
+                    @user.basics.updated_at.utc.to_s
     end
     
     def test_unix_times_parsed_to_dates_for_profile
-      assert_equal "2013-10-31T19:22:19+00:00",
-                   @user.profile.updated_at.to_s      
+      assert_equal "2013-10-31 19:22:19 UTC",
+                   @user.profile.updated_at.utc.to_s      
     end
 
     def test_unix_times_parsed_to_dates_for_public_keys
-      assert_equal "2013-11-05T21:00:12+00:00",
-                   @user.public_keys.primary.created_at.to_s
-      assert_equal "2013-11-05T21:00:12+00:00",
-                   @user.public_keys.primary.updated_at.to_s
+      assert_equal "2013-11-05 21:00:12 UTC",
+                   @user.public_keys.primary.created_at.utc.to_s
+      assert_equal "2013-11-05 21:00:12 UTC",
+                   @user.public_keys.primary.updated_at.utc.to_s
     end
         
     def test_unix_times_parsed_to_dates_for_private_keys
-      assert_equal "2013-11-05T21:00:12+00:00",
-                   @user.private_keys.primary.created_at.to_s
-      assert_equal "2013-11-05T21:00:12+00:00",
-                   @user.private_keys.primary.updated_at.to_s
+      assert_equal "2013-11-05 21:00:12 UTC",
+                   @user.private_keys.primary.created_at.utc.to_s
+      assert_equal "2013-11-05 21:00:12 UTC",
+                   @user.private_keys.primary.updated_at.utc.to_s
     end
     
     def test_emails_set_correctly
