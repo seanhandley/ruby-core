@@ -131,6 +131,12 @@ module Keybase::Core
         assert @user.revoke_key(@kid)
       end
     end
+
+    def test_logout
+      Request::Session.stub(:post, true) do
+        assert Request::Session.kill_all
+      end
+    end
     
   end
 end

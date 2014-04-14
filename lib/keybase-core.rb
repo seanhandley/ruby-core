@@ -19,6 +19,7 @@ module Keybase
     require_relative 'keybase-core/request/key/revoke'
     require_relative 'keybase-core/request/root/get_salt_and_login_session'
     require_relative 'keybase-core/request/root/login'
+    require_relative 'keybase-core/request/session/kill_all'
     require_relative 'keybase-core/request/sig/post_auth'
     require_relative 'keybase-core/request/user/lookup'
     require_relative 'keybase-core/response'

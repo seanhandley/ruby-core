@@ -42,6 +42,12 @@ module Keybase::Core
       return new(response['me'])
     end
 
+    # Log out of Keybase
+    #
+    def logout
+      return Request::Session.kill_all
+    end
+
     # Post a self-signed authentication certificate to Keybase
     #
     # This requires login first.
