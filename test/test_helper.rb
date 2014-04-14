@@ -6,7 +6,7 @@ if require 'coveralls'
   end
 end
 
-require_relative '../lib/keybase'
+require_relative '../lib/keybase-core'
 EXAMPLE_USER_JSON = IO.read(File.expand_path('../fixtures/example_user.json', __FILE__))
 EXAMPLE_USER      = JSON.parse(EXAMPLE_USER_JSON)
 EXAMPLE_DUMP_JSON = IO.read(File.expand_path('../fixtures/example_dump.json', __FILE__))

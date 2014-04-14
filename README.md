@@ -38,7 +38,7 @@ Upon login, you'll get back a user object. Your user object is essentially a lar
 The login will also initiate an ongoing session which allows the authenticated actions: `key/add`, `key/revoke`, `sig/post_auth`
 
 ```ruby
-me = Keybase.login('chris', 'passphrase')
+me = Keybase::Core.login('chris', 'passphrase')
 me.basics.username          #=> "chris"
 me.private_keys.primary.kid #=> "a140c70404a13370f7..."
 ```
@@ -104,7 +104,7 @@ me.post_auth('----- BEGIN PGP MESSAGE ----- ...')
 A user object is a large dictionary (wrapped as a Ruby object) and contains pretty much everything about a user that you have access to. 
 
 ```ruby
-user = Keybase.lookup('username')
+user = Keybase::Core.lookup('username')
 user.basics.username                
 #=> "chris"
 user.profile.bio                   
@@ -124,13 +124,13 @@ user.public_keys.primary.updated_at
 Dumps represent a history of the public dumps of the site. You can use it to track or mirror the site as you wish. If you have a previous dump of the site, you can apply changes to sync up without downloading the entire site.
 
 ```ruby
-dump = Keybase.dump_latest
+dump = Keybase::Core.dump_latest
 dump.full_data_sha256
 #=> "66e72ba9906e8eec544ae74ee22c249e6879ddcd856df0c9679d7a79f26ce259" 
 dump.changes_from_parent
 #=> "https://s3.amazonaws.com/keybase_data_dumps/2014-03-24-18-06-15--1b43379e593576fe395ad90e--changes.json"
 
-dumps = Keybase.dump_all #=> [#<Keybase::Dump:0x00000102584280...]
+dumps = Keybase::Core.dump_all #=> [#<Keybase::Dump:0x00000102584280...]
 ```
 
 ## Further Reading
