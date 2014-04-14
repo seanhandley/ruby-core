@@ -133,6 +133,18 @@ dump.changes_from_parent
 dumps = Keybase::Core.dump_all #=> [#<Keybase::Dump:0x00000102584280...]
 ```
 
+## Signing
+
+Keybase-Core is cryptographically signed. To be sure the gem you install hasn’t been tampered with:
+
+* Add the public key as a trusted certificate, `gem cert --add <(curl -Ls https://raw.github.com/keybase/ruby-core/master/certs/seanhandley.pem)`
+
+* Install the gem with `gem install keybase-core -P HighSecurity`
+
+The HighSecurity trust profile will verify signed gems and all dependencies.
+
+You may use the MediumSecurity option if you prefer - this will allow the installation of unsigned dependencies
+
 ## Further Reading
 
 Please check out the [Keybase API Documentation](https://keybase.io/__/api-docs/1.0) for a comprehensive explanation of the API and its capabilities.
