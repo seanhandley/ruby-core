@@ -38,7 +38,7 @@ Upon login, you'll get back a user object. Your user object is essentially a lar
 The login will also initiate an ongoing session which allows the authenticated actions: `key/add`, `key/revoke`, `sig/post_auth`
 
 ```ruby
-me = Keybase::Core.login('chris', 'passphrase')
+me = Keybase::Core::User.login('chris', 'passphrase')
 me.basics.username          #=> "chris"
 me.private_keys.primary.kid #=> "a140c70404a13370f7..."
 ```
