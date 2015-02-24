@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    keybase-core (0.1.6)
+    keybase-core (0.1.7)
       faraday (~> 0.9.1)
       scrypt (~> 2.0.0)
 
