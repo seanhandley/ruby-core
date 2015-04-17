@@ -20,9 +20,9 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'vcr', '~> 2.8.0'
   gem.add_development_dependency 'webmock', '~> 1.8.0'
   gem.add_development_dependency 'minitest', '~> 5.3.1'
-  gem.add_development_dependency 'simplecov', '~> 0.8.2'
+  gem.add_development_dependency 'simplecov', '~> 0.9.1'
   gem.add_development_dependency 'yard', '~> 0.8.7.4'
-  gem.add_development_dependency 'coveralls', '~> 0.7.0'
+  gem.add_development_dependency 'coveralls', '~> 0.8.0'
 
   # Gem Signing
   gem.cert_chain  = ['certs/seanhandley.pem']
